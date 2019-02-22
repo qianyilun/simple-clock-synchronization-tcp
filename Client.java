@@ -12,7 +12,7 @@ public class Client {
         
             // start the "timer"
             long startTimeInMillis = System.currentTimeMillis();
-            clientSocket = new Socket("192.168.0.13", 8080);
+            clientSocket = new Socket("192.168.0.15", 8080);
             outToServer = new DataOutputStream(clientSocket.getOutputStream());
             inFromServer = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
             
