@@ -1,12 +1,13 @@
-## Java Socket Programming with TCP
+# Java Socket Programming with TCP
 
-Sockets provide the communication mechanism between two computers using TCP. A client program creates a socket on its end of the communication and attempts to connect that socket to a server.
+## Introduction 
+TCP socket is a communication mechanism via stream. A client program can create a TCP socket to connect to the socket of a server.
 
-When the connection is made, the server creates a socket object on its end of the communication. The client and the server can now communicate by writing to and reading from the socket.
+When the connection is made, the server creates a socket object on its end of the communication. The client and the server can now communicate by writing to and reading an object (or stream) from the socket.
 
 The `java.net.Socket` class represents a socket, and the `java.net.ServerSocket` class provides a mechanism for the server program to listen for clients and establish connections with them.
 
-TCP is a two-way communication protocol, hence data can be sent across both streams at the same time.
+TCP is a two-way communication protocol. Data can be sent across both streams at the same time.
 
 ### Steps
 
